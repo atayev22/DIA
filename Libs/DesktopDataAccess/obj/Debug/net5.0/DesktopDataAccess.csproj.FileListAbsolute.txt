@@ -1,0 +1,15 @@
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\obj\Debug\net5.0\DesktopDataAccess.csprojAssemblyReference.cache
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\obj\Debug\net5.0\DesktopDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\obj\Debug\net5.0\DesktopDataAccess.AssemblyInfoInputs.cache
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\obj\Debug\net5.0\DesktopDataAccess.AssemblyInfo.cs
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\obj\Debug\net5.0\DesktopDataAccess.csproj.CoreCompileInputs.cache
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\bin\Debug\net5.0\DesktopDataAccess.deps.json
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\bin\Debug\net5.0\DesktopDataAccess.dll
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\bin\Debug\net5.0\ref\DesktopDataAccess.dll
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\bin\Debug\net5.0\DesktopDataAccess.pdb
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\bin\Debug\net5.0\DesktopCore.dll
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\bin\Debug\net5.0\DesktopCore.pdb
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\obj\Debug\net5.0\DesktopDataAccess.csproj.CopyComplete
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\obj\Debug\net5.0\DesktopDataAccess.dll
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\obj\Debug\net5.0\ref\DesktopDataAccess.dll
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopDataAccess\obj\Debug\net5.0\DesktopDataAccess.pdb
