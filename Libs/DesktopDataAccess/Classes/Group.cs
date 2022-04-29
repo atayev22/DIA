@@ -17,21 +17,24 @@ namespace DesktopDataAccess.Classes
 
         public static void Insert(Group group)
         {
+         
             string sql = @$"INSERT INTO [{table}]
                             VALUES ('{group.Name}')";
 
+         
+                DBContext.Execute(sql);
+      }
+
+        public static int Proverka(Group group)
+        {
+
+            string sql = $@"SELECT id FROM groups
+                          WHERE group_name = '{group.Name}'";
+
+            
+                return DBContext.ExCheck(sql);
+            
            
-            DBContext.Execute(sql);
         }
-
-        //public static bool Check(Group group)
-        //{
-            
-        //    string sql = $@"SELECT * FROM groups
-        //                  WHERE group_name = '{group.Name}'";
-
-        //   return DBContext.DBCheck(sql);
-            
-        //}
     }
 }

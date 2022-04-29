@@ -1,6 +1,7 @@
 ﻿using DesktopCore.Classes;
 using Microsoft.Data.SqlClient;
 using System;
+using System.Data;
 
 namespace DesktopCore
 {
@@ -10,27 +11,40 @@ namespace DesktopCore
 
         private static SqlConnection sqlConnection;
 
-        private static SqlCommand sqlCommand;
-        private static SqlDataReader reader;
+        public static SqlCommand sqlCommand;
 
-        //public static bool DBCheck(string sql)
-        //{
-        //    sqlConnection = new SqlConnection(connectionString);
-        //    sqlCommand = new SqlCommand(sql, sqlConnection);
-        //    reader = sqlCommand.ExecuteReader();
-        //    try
-        //    {
-                
-        //        sqlConnection.Open();
-        //        return reader.Read();
-                
-        //    }
+        public static SqlDataAdapter sqlDataAdapter;
 
-        //    finally
-        //    {
-        //        sqlConnection.Close();
-        //    }
-        //}
+        public static int ExCheck(string sql)
+        {
+            sqlConnection = new SqlConnection(connectionString);
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            try
+            {
+                sqlConnection.Open();
+                sqlCommand.ExecuteScalar();               
+                if (sqlCommand.ExecuteScalar() == null)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return int.Parse(sqlCommand.ExecuteScalar().ToString());
+                }
+
+            }
+            catch
+            {
+
+                throw;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+            
+        }
+        
         public static int Execute(string sql) 
         {
             
@@ -41,8 +55,36 @@ namespace DesktopCore
             {
                 sqlConnection.Open();
                 return sqlCommand.ExecuteNonQuery();
+               
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return 1;
             }
             
+            finally
+            {
+                sqlConnection.Close();
+            }
+        }
+
+        public static DataSet ExecuteData(string sql)
+        {
+
+            sqlConnection = new SqlConnection(connectionString);
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlDataAdapter = new SqlDataAdapter(sql, sqlConnection);
+            DataSet ds = new DataSet();
+
+            try
+            {
+                sqlConnection.Open(); 
+                sqlDataAdapter.Fill(ds);
+                return ds;
+            }
+            
+
             finally
             {
                 sqlConnection.Close();

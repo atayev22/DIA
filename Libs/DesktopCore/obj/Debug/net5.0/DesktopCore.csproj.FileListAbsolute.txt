@@ -1,8 +1,6 @@
 D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\bin\Debug\net5.0\DesktopCore.deps.json
 D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\bin\Debug\net5.0\DesktopCore.dll
-D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\bin\Debug\net5.0\ref\DesktopCore.dll
 D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\bin\Debug\net5.0\DesktopCore.pdb
-D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\DesktopCore.csprojAssemblyReference.cache
 D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\DesktopCore.GeneratedMSBuildEditorConfig.editorconfig
 D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\DesktopCore.AssemblyInfoInputs.cache
 D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\DesktopCore.AssemblyInfo.cs
@@ -10,3 +8,5 @@ D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\Deskto
 D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\DesktopCore.dll
 D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\ref\DesktopCore.dll
 D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\DesktopCore.pdb
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\DesktopCore.csproj.AssemblyReference.cache
+D:\Kamran\C#\winforms2.0\DesktopProject\Libs\DesktopCore\obj\Debug\net5.0\refint\DesktopCore.dll

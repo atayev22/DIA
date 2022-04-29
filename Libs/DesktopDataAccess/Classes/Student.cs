@@ -13,12 +13,13 @@ namespace DesktopDataAccess.Classes
         public string Surname { get; set; }
         public int GroupId { get; set; }
 
-        public static void Insert(Student student, Group group)
+        public static void Insert(Student student,Group group)
         {
+            student.GroupId = group.Id;
             string sql = $@"INSERT INTO [{table}]
                             VALUES ('{student.Name}','{student.Surname}',{student.GroupId})";
 
-           
+            
             DBContext.Execute(sql);
         }
 

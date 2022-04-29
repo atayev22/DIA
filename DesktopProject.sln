@@ -4,14 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinForms", "Forms\WinForms\WinForms.csproj", "{F991B9C3-2D69-4B96-9078-ACCCA6FB5BBB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C83ACAFB-B140-43B6-8B06-78EA5BB891D5} = {C83ACAFB-B140-43B6-8B06-78EA5BB891D5}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{1A39C094-0095-410C-93D2-4D358E80B090}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{B461E09E-261A-4081-B1E0-096D26F449CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopCore", "Libs\DesktopCore\DesktopCore.csproj", "{C83ACAFB-B140-43B6-8B06-78EA5BB891D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesktopCore", "Libs\DesktopCore\DesktopCore.csproj", "{C83ACAFB-B140-43B6-8B06-78EA5BB891D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopDataAccess", "Libs\DesktopDataAccess\DesktopDataAccess.csproj", "{E515CA89-7BAB-4615-8A7F-F4B682AF5F55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesktopDataAccess", "Libs\DesktopDataAccess\DesktopDataAccess.csproj", "{E515CA89-7BAB-4615-8A7F-F4B682AF5F55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

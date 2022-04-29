@@ -12,12 +12,13 @@ using System.Windows.Forms;
 using Message = DesktopCore.Classes.Message;
 using System.Text.RegularExpressions;
 using Group = DesktopDataAccess.Classes.Group;
+using WinForms;
 
 namespace DesktopProject
 {
-    public partial class Form1 : Form
+    public partial class studentForm : Form
     {
-        public Form1()
+        public studentForm()
         {
             InitializeComponent();
 
@@ -30,14 +31,38 @@ namespace DesktopProject
             Student student = new Student();
             Group group = new Group();
 
-            
+
+
             student.Name = textBoxName.Text;
             student.Surname = textBoxSurname.Text;
-            group.Name = textBoxGroup.Text;
-            student.GroupId = group.Id;
+            group.Name = textBoxGroupNameS.Text;
 
-            Student.Insert(student,group);
-            Group.Insert(group);
+            
+
+            if (Group.Proverka(group) != 0)
+            {
+                group.Id = Group.Proverka(group);
+
+
+                Student.Insert(student, group);
+
+                MessageBox.Show("Успешно добавлено");
+
+
+                textBoxName.Clear();
+                textBoxSurname.Clear();
+                textBoxGroupNameS.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Такой группы не суш");
+                textBoxGroupNameS.Clear();
+            }
+           
+            
+            
+
+            
 
 
         }
@@ -59,6 +84,13 @@ namespace DesktopProject
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Hide();
+            mainForm mainForm = new mainForm();
+            mainForm.Show();
         }
     }
 }
